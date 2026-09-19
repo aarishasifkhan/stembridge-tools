@@ -1,0 +1,354 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-S5CRK1K9G9"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-S5CRK1K9G9');
+  </script>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chemical Equation Balancer with Steps — STEMBridge Tools</title>
+  <meta name="description" content="Balance chemical equations online with full step-by-step explanations. Learn why each coefficient is placed where it is. Covers combustion, neutralisation, oxidation, and more. Free for students." />
+  <meta name="keywords" content="chemical equation balancer with steps, balance chemical equations online, how to balance equations, chemistry for students, combustion reaction balanced" />
+  <meta name="robots" content="index, follow" />
+
+  <!-- ✅ FIXED canonical -->
+  <link rel="canonical" href="https://stembridgetools.netlify.app/pages/chemistry.html" />
+
+  <!-- ✅ ADDED Open Graph -->
+  <meta property="og:title" content="Chemical Equation Balancer with Steps — STEMBridge Tools" />
+  <meta property="og:description" content="Balance chemical equations online with full step-by-step explanations. Learn why each coefficient is placed where it is. Free for students." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://stembridgetools.netlify.app/pages/chemistry.html" />
+  <meta property="og:image" content="https://stembridgetools.netlify.app/assets/stembridge-tools.png" />
+
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="icon" type="image/svg+xml" href="../assets/stembridge-tools.png" />
+</head>
+  <body>
+    <!-- HEADER -->
+    <header class="site-header">
+      <div class="container">
+        <nav class="nav">
+          <a href="../index.html" class="nav-logo"> STEMBridge Tools </a>
+          <ul class="nav-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="physics.html">Physics</a></li>
+            <li><a href="chemistry.html">Chemistry</a></li>
+            <li><a href="math.html">Maths</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="contact.html" class="nav-cta">Contact</a></li>
+          </ul>
+          <button
+            class="nav-hamburger"
+            id="navHamburger"
+            aria-label="Open menu"
+          >
+            <span></span><span></span><span></span>
+          </button>
+        </nav>
+      </div>
+      <nav class="nav-mobile" id="navMobile">
+        <a href="../index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="physics.html">Physics Solver</a>
+        <a href="chemistry.html">Chemistry Balancer</a>
+        <a href="math.html">Maths Translator</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <!-- HERO -->
+    <section class="tool-hero">
+      <div class="container">
+        <div class="badge">⚗️ Chemical Equation Balancer</div>
+        <h1>Balance Chemical Equations<br />and Understand Why</h1>
+        <p>
+          Type an equation below and get a step-by-step guide that explains
+          every coefficient — not just the final answer.
+        </p>
+      </div>
+    </section>
+
+    <!-- AD SLOT -->
+    <div class="container">
+      <div class="ad-slot ad-slot-leaderboard">Advertisement</div>
+    </div>
+
+    <!-- TOOL WORKSPACE -->
+    <section class="section">
+      <div class="container">
+        <div class="tool-workspace">
+          <!-- INPUT -->
+          <div class="tool-panel">
+            <div class="tool-panel-header">
+              <div class="panel-dot dot-blue"></div>
+              <h3>Enter Your Equation</h3>
+            </div>
+            <div class="tool-panel-body">
+              <div class="form-group">
+                <label for="chemInput"
+                  >Chemical Equation (reactants → products)</label
+                >
+                <textarea
+                  id="chemInput"
+                  placeholder="e.g. H2 + O2&#10;or CH4 + O2&#10;or NaOH + HCl&#10;or Fe + O2"
+                ></textarea>
+              </div>
+
+              <p
+                style="
+                  font-size: 0.85rem;
+                  color: var(--gray-600);
+                  margin-bottom: 10px;
+                  font-weight: 600;
+                "
+              >
+                Try an example:
+              </p>
+              <div class="examples-bar">
+                <span class="example-chip" data-eq="H2 + O2">H₂ + O₂</span>
+                <span class="example-chip" data-eq="CH4 + O2">CH₄ + O₂</span>
+                <span class="example-chip" data-eq="C3H8 + O2">C₃H₈ + O₂</span>
+                <span class="example-chip" data-eq="NaOH + HCl"
+                  >NaOH + HCl</span
+                >
+                <span class="example-chip" data-eq="Fe + O2">Fe + O₂</span>
+                <span class="example-chip" data-eq="N2 + H2">N₂ + H₂</span>
+                <span class="example-chip" data-eq="H2SO4 + NaOH"
+                  >H₂SO₄ + NaOH</span
+                >
+                <span class="example-chip" data-eq="Mg + O2">Mg + O₂</span>
+                <span class="example-chip" data-eq="C + O2">C + O₂</span>
+              </div>
+
+              <button class="btn-solve" id="chemSolve" style="margin-top: 20px">
+                ⚗️ Balance It
+              </button>
+
+              <div class="info-block tip" style="margin-top: 16px">
+                <span class="ib-icon">💡</span>
+                <p>
+                  Type the equation using plain text. Use element symbols (e.g.
+                  H2, O2, NaOH, CH4). You can write the arrow as → or just
+                  separate reactants from products with a space — the tool
+                  understands both.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- OUTPUT -->
+          <div class="tool-panel">
+            <div class="tool-panel-header">
+              <div class="panel-dot dot-green"></div>
+              <h3>Step-by-Step Balancing</h3>
+            </div>
+            <div class="tool-panel-body">
+              <div id="chemOutput">
+                <p class="output-placeholder">
+                  Your balanced equation and step-by-step explanation will
+                  appear here. Click an example above or type your own equation,
+                  then click "Balance It".
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- AD SLOT -->
+    <div class="container">
+      <div class="ad-slot ad-slot-rectangle">Advertisement</div>
+    </div>
+
+    <!-- GUIDE SECTION -->
+    <section class="section section--gray">
+      <div class="container prose">
+        <h2>How to Balance Chemical Equations — The Right Method</h2>
+        <p>
+          Balancing equations is one of those topics that looks confusing at
+          first but becomes very straightforward once you follow a clear system.
+          Here is the method that experienced chemistry students use.
+        </p>
+
+        <h3>Rule 1 — You Can Only Change Coefficients, Never Subscripts</h3>
+        <p>
+          A coefficient is the big number in front of a formula, like the
+          <strong>2</strong> in 2H₂O. A subscript is the small number inside the
+          formula, like the <strong>2</strong> in H₂O. You can only change
+          coefficients — never subscripts. Changing subscripts changes the
+          substance itself (H₂O is water, H₂O₂ is hydrogen peroxide — completely
+          different things).
+        </p>
+
+        <h3>Rule 2 — The Law of Conservation of Mass</h3>
+        <p>
+          In any chemical reaction, atoms are not created or destroyed — they
+          are just rearranged. So the number of each type of atom on the left
+          side (reactants) must equal the number on the right side (products).
+          This is the whole point of balancing.
+        </p>
+
+        <h3>Rule 3 — The Balancing Order</h3>
+        <p>
+          Follow this order and you will balance most equations correctly on the
+          first try:
+          <strong
+            >metals first → non-metals next → hydrogen → oxygen last</strong
+          >. The reason for this order is that O and H appear in more compounds
+          than other elements, so balancing them last gives you more
+          flexibility.
+        </p>
+
+        <h3>Rule 4 — The LCM Trick for Tricky Equations</h3>
+        <p>
+          If you end up with an odd number of atoms on one side from a diatomic
+          molecule (like O₂), use the Lowest Common Multiple (LCM). For example,
+          if you need 3 O on the left but O₂ gives you 2 at a time — use 3 × O₂
+          to get 6, then balance the right side to 6 as well. It sounds complex
+          but becomes second nature quickly.
+        </p>
+
+        <h3>Rule 5 — Always Verify</h3>
+        <p>
+          Once you think the equation is balanced, go through every element one
+          more time and count atoms on both sides. Never skip this step in an
+          exam — it takes 20 seconds and protects marks you have already earned.
+        </p>
+
+        <div class="info-block warn">
+          <span class="ib-icon">🎯</span>
+          <p>
+            <strong>Exam Tip:</strong> In O Level Chemistry, show your atom
+            count in a small table next to the equation. Examiners can then see
+            your working even if you make a minor arithmetic error, and you can
+            still earn method marks.
+          </p>
+        </div>
+
+        <h2>Reaction Types You Need to Know</h2>
+
+        <h3>Combustion Reactions</h3>
+        <p>
+          A fuel reacts with oxygen to produce carbon dioxide and water. The
+          pattern is always: fuel + O₂ → CO₂ + H₂O. Balance C first, then H,
+          then O. Combustion reactions are the most common type in exams.
+        </p>
+
+        <h3>Neutralisation Reactions</h3>
+        <p>
+          An acid reacts with a base to produce a salt and water. The general
+          formula is: Acid + Base → Salt + Water. Many neutralisation equations
+          are already balanced or need only small coefficients.
+        </p>
+
+        <h3>Synthesis (Combination) Reactions</h3>
+        <p>
+          Two or more substances combine to form a single product. The Haber
+          process (N₂ + 3H₂ → 2NH₃) is a classic example and a favourite in O
+          Level exams.
+        </p>
+
+        <h3>Oxidation Reactions</h3>
+        <p>
+          A substance reacts with oxygen, often gaining oxygen atoms. Rusting
+          (iron + oxygen → iron oxide) is an oxidation reaction you will almost
+          certainly see in your exam.
+        </p>
+      </div>
+    </section>
+
+    <!-- RELATED TOOLS -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Related Tools</span>
+          <h2>More Tools to Help You Revise</h2>
+        </div>
+        <div class="related-tools">
+          <a href="physics.html" class="related-card">
+            <div class="rc-icon card-icon--blue">⚡</div>
+            <div>
+              <h4>Physics Numerical Solver</h4>
+              <p>Step-by-step solutions for 8 formula types</p>
+            </div>
+          </a>
+          <a href="math.html" class="related-card">
+            <div class="rc-icon card-icon--orange">🔢</div>
+            <div>
+              <h4>Maths Word Problem Translator</h4>
+              <p>Turn word problems into solvable equations</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <div class="nav-logo" style="font-size: 1.1rem">
+              STEMBridge Tools
+            </div>
+            <p>
+              Free, step-by-step STEM tools for students in Class 6 through O
+              Level. Learn the method — not just the answer.
+            </p>
+          </div>
+          <div class="footer-col">
+            <h4>Tools</h4>
+            <ul>
+              <li><a href="physics.html">Physics Solver</a></li>
+              <li><a href="chemistry.html">Chemistry Balancer</a></li>
+              <li><a href="math.html">Maths Translator</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Company</h4>
+            <ul>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="blogs.html">Blogs</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Legal</h4>
+            <ul>
+              <li><a href="privacy.html">Privacy Policy</a></li>
+              <li><a href="disclaimer.html">Disclaimer</a></li>
+              <li>
+                <a href="terms-and-conditions.html"
+                  >Terms and Conditions</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span>© 2026 STEMBridge Tools. All rights reserved.</span>
+          <span
+            ><a href="privacy.html">Privacy Policy</a>
+            ·
+            <a href="disclaimer.html">Disclaimer</a>
+            ·
+            <a href="terms-and-conditions.html">Terms and Conditions</a>
+          >
+        </div>
+      </div>
+    </footer>
+
+    <script src="../js/shared.js"></script>
+    <script src="../js/chemistry.js"></script>
+  </body>
+</html>

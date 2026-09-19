@@ -1,0 +1,696 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-S5CRK1K9G9"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-S5CRK1K9G9");
+    </script>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>
+      Ohm's Law Explained — Voltage, Current and Resistance | STEMBridge Tools
+    </title>
+
+    <meta
+      name="description"
+      content="Master Ohm's Law (V = IR) with step-by-step explanations, real-world analogies, 8 worked examples, and O Level exam tips. Written for Class 8–O Level students."
+    />
+    <meta
+      name="keywords"
+      content="Ohm's law, voltage current resistance, V=IR, physics circuits, O level electricity, Class 8 physics, series circuit, parallel circuit"
+    />
+
+    <!-- ✅ FIX 1: Added missing robots meta tag -->
+    <meta name="robots" content="index, follow" />
+
+    <!-- ✅ FIX 2: Added missing author meta tag -->
+    <meta name="author" content="STEMBridge Tools" />
+
+    <!-- ✅ FIX 3: Added missing canonical tag — this was completely absent -->
+    <link
+      rel="canonical"
+      href="https://stembridgetools.netlify.app/pages/ohms-law-guide.html"
+    />
+
+    <!-- Open Graph — ✅ FIX 4: Added missing og:url and og:site_name -->
+    <meta
+      property="og:title"
+      content="Ohm's Law Explained — Voltage, Current and Resistance | STEMBridge Tools"
+    />
+    <meta
+      property="og:description"
+      content="Master V = IR with clear explanations, real-world analogies, and 8 solved exam problems. Free for Class 8–O Level students."
+    />
+    <meta property="og:type" content="article" />
+    <meta
+      property="og:url"
+      content="https://stembridgetools.netlify.app/pages/ohms-law-guide.html"
+    />
+    <meta property="og:site_name" content="STEMBridge Tools" />
+
+    <!-- ✅ FIX 5: Added missing Twitter Card tags -->
+    <meta name="twitter:card" content="summary" />
+    <meta
+      name="twitter:title"
+      content="Ohm's Law Explained — Voltage, Current and Resistance | STEMBridge Tools"
+    />
+    <meta
+      name="twitter:description"
+      content="Master V = IR with clear explanations, real-world analogies, and 8 solved exam problems. Free for Class 8–O Level students."
+    />
+
+    <!-- Article schema markup — ✅ FIX 6: Corrected dateModified to a past/present date, added url field -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Ohm's Law Explained — Voltage, Current and Resistance",
+        "description": "A complete guide to Ohm's Law for Class 8–O Level students. Learn V = IR with clear explanations and solved circuit problems.",
+        "url": "https://stembridgetools.netlify.app/pages/ohms-law-guide.html",
+        "author": {
+          "@type": "Organization",
+          "name": "STEMBridge Tools",
+          "url": "https://stembridgetools.netlify.app"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "STEMBridge Tools",
+          "url": "https://stembridgetools.netlify.app"
+        },
+        "datePublished": "2026-01-01",
+        "dateModified": "2026-05-15",
+        "educationalLevel": "Class 8 to O Level",
+        "learningResourceType": "Article"
+      }
+    </script>
+
+    <link rel="stylesheet" href="../css/style.css" />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="../assets/stembridge-tools.png"
+    />
+  </head>
+
+  <body>
+    <!-- HEADER -->
+    <header class="site-header">
+      <div class="container">
+        <nav class="nav">
+          <a href="../index.html" class="nav-logo">STEMBridge Tools</a>
+          <ul class="nav-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="physics.html">Physics</a></li>
+            <li><a href="chemistry.html">Chemistry</a></li>
+            <li><a href="math.html">Maths</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="contact.html" class="nav-cta">Contact</a></li>
+          </ul>
+          <!-- ✅ FIX 7: Added missing aria-label to hamburger button -->
+          <button
+            class="nav-hamburger"
+            id="navHamburger"
+            aria-label="Open menu"
+          >
+            <span></span><span></span><span></span>
+          </button>
+        </nav>
+      </div>
+      <nav class="nav-mobile" id="navMobile">
+        <a href="../index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="physics.html">Physics Solver</a>
+        <a href="chemistry.html">Chemistry Balancer</a>
+        <a href="math.html">Maths Translator</a>
+        <a href="contact.html">Contact</a>
+        <a href="privacy.html">Privacy Policy</a>
+      </nav>
+    </header>
+
+    <!-- HERO -->
+    <section class="page-hero">
+      <div class="container">
+        <h1>Ohm's Law — Voltage, Current and Resistance</h1>
+        <p>
+          Master V = IR with real-world intuition, step-by-step worked examples,
+          and everything you need to ace your O Level electricity questions.
+        </p>
+      </div>
+    </section>
+
+    <!-- AD -->
+    <div class="container">
+      <div class="ad-slot ad-slot-leaderboard">Advertisement</div>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <main>
+      <section class="section">
+        <div class="container prose">
+          <!-- ─── VOLTAGE ─── -->
+          <h2 id="what-is-voltage">What is Voltage?</h2>
+
+          <p>
+            <strong>Voltage</strong> (also called
+            <strong>potential difference</strong>) is the electrical push that
+            drives charge around a circuit. The unit of voltage is the
+            <strong>volt (V)</strong>, named after the Italian physicist
+            Alessandro Volta.
+          </p>
+
+          <p>
+            A helpful analogy: think of water flowing through a pipe. Voltage is
+            like the water pressure — the higher the pressure, the harder the
+            water is pushed through. In a circuit, higher voltage pushes
+            electrons more forcefully, which produces a larger current.
+          </p>
+
+          <p>
+            A standard AA battery supplies 1.5 V. A phone charger typically
+            supplies 5 V. The mains electricity in Pakistan is 220 V — which is
+            why touching live mains wiring is so dangerous.
+          </p>
+
+          <ul>
+            <li>Symbol: <strong>V</strong></li>
+            <li>Unit: <strong>volt (V)</strong></li>
+            <li>
+              Measured with: a <strong>voltmeter</strong>, connected in
+              <strong>parallel</strong> across a component
+            </li>
+          </ul>
+
+          <!-- ─── CURRENT ─── -->
+          <h2 id="what-is-current">What is Current?</h2>
+
+          <p>
+            <strong>Electric current</strong> is the rate at which electric
+            charge flows through a conductor. The unit of current is the
+            <strong>ampere (A)</strong>, often shortened to "amp".
+          </p>
+
+          <p>
+            Using the water-pipe analogy again: if voltage is the pressure,
+            current is the <em>flow rate</em> — how many litres of water pass a
+            point per second. In circuits, current tells you how many coulombs
+            of charge pass a point per second.
+          </p>
+
+          <blockquote>
+            <strong>1 ampere = 1 coulomb of charge per second</strong>
+          </blockquote>
+
+          <p>
+            In practice, many circuits operate with currents smaller than 1 A.
+            Electronics and sensor circuits often use
+            <strong>milliamps (mA)</strong>, where 1 mA = 0.001 A. Always
+            convert milliamps to amps before substituting into Ohm's Law.
+          </p>
+
+          <ul>
+            <li>Symbol: <strong>I</strong></li>
+            <li>Unit: <strong>ampere (A)</strong></li>
+            <li>
+              Measured with: an <strong>ammeter</strong>, connected in
+              <strong>series</strong> in the circuit
+            </li>
+          </ul>
+
+          <!-- ─── RESISTANCE ─── -->
+          <h2 id="what-is-resistance">What is Resistance?</h2>
+
+          <p>
+            <strong>Resistance</strong> is the opposition a material offers to
+            the flow of current. The unit of resistance is the
+            <strong>ohm (Ω)</strong>, named after the German physicist Georg
+            Simon Ohm.
+          </p>
+
+          <p>
+            Back to the water analogy: resistance is like the narrowness of the
+            pipe. A thin pipe resists water flow more than a wide pipe. In a
+            circuit, a high-resistance component restricts current — so for the
+            same voltage, a higher resistance produces a lower current.
+          </p>
+
+          <p>
+            Every material has a different resistance. Copper wire has very low
+            resistance (which is why we use it in cables). The thin tungsten
+            filament inside a light bulb has high resistance — and that
+            resistance causes it to heat up and glow.
+          </p>
+
+          <ul>
+            <li>Symbol: <strong>R</strong></li>
+            <li>Unit: <strong>ohm (Ω)</strong></li>
+            <li>
+              Larger values: kilohm (kΩ) = 1 000 Ω, megohm (MΩ) = 1 000 000 Ω
+            </li>
+          </ul>
+
+          <!-- ─── OHM'S LAW ─── -->
+          <h2 id="ohms-law">Ohm's Law: V = I × R</h2>
+
+          <p>
+            Georg Simon Ohm published his law in 1827. After careful experiments
+            with metal wires, he discovered a consistent relationship: for a
+            conductor at constant temperature, the voltage across it is directly
+            proportional to the current through it.
+          </p>
+
+          <p>In equation form:</p>
+
+          <div class="formula-box" aria-label="Ohm's Law formula">
+            <strong>V = I × R</strong>
+          </div>
+
+          <p>Where:</p>
+          <ul>
+            <li><strong>V</strong> = voltage in volts (V)</li>
+            <li><strong>I</strong> = current in amperes (A)</li>
+            <li><strong>R</strong> = resistance in ohms (Ω)</li>
+          </ul>
+
+          <p>
+            The law means: doubling the voltage doubles the current (if
+            resistance stays constant). Doubling the resistance halves the
+            current (if voltage stays constant). This proportional relationship
+            is the core of circuit analysis at O Level.
+          </p>
+
+          <h3>The Ohm's Law Triangle</h3>
+          <p>
+            Many students use the "VIR triangle" to remember the rearrangements.
+            Write V at the top, I on the bottom-left, and R on the bottom-right.
+            Cover the quantity you want to find, and the remaining two show the
+            operation:
+          </p>
+          <ul>
+            <li>Cover V → you see I × R → so <strong>V = I × R</strong></li>
+            <li>Cover I → you see V ÷ R → so <strong>I = V ÷ R</strong></li>
+            <li>Cover R → you see V ÷ I → so <strong>R = V ÷ I</strong></li>
+          </ul>
+
+          <!-- ─── WORKED EXAMPLES ─── -->
+          <h2 id="worked-examples">8 Worked Examples</h2>
+
+          <p>
+            Work through each example carefully. Notice how every solution
+            follows the same four-step method:
+            <strong
+              >identify → select formula → substitute → calculate and state
+              units.</strong
+            >
+          </p>
+
+          <!-- Example 1 -->
+          <h3>Example 1 — Find Voltage</h3>
+          <p>
+            <strong>Question:</strong> A resistor carries a current of 3 A and
+            has a resistance of 8 Ω. Calculate the voltage across it.
+          </p>
+          <p>
+            <strong>Given:</strong> I = 3 A, R = 8 Ω<br />
+            <strong>Find:</strong> V
+          </p>
+          <p><strong>Formula:</strong> V = I × R</p>
+          <p><strong>Substitute:</strong> V = 3 × 8</p>
+          <p><strong>Answer: V = 24 V</strong></p>
+
+          <!-- Example 2 -->
+          <h3>Example 2 — Find Current</h3>
+          <p>
+            <strong>Question:</strong> A 12 V battery connects to a 4 Ω
+            resistor. What current flows through the circuit?
+          </p>
+          <p>
+            <strong>Given:</strong> V = 12 V, R = 4 Ω<br />
+            <strong>Find:</strong> I
+          </p>
+          <p><strong>Formula:</strong> I = V ÷ R</p>
+          <p><strong>Substitute:</strong> I = 12 ÷ 4</p>
+          <p><strong>Answer: I = 3 A</strong></p>
+
+          <!-- Example 3 -->
+          <h3>Example 3 — Find Resistance</h3>
+          <p>
+            <strong>Question:</strong> A 9 V battery drives a current of 0.5 A
+            through a resistor. What is the resistance?
+          </p>
+          <p>
+            <strong>Given:</strong> V = 9 V, I = 0.5 A<br />
+            <strong>Find:</strong> R
+          </p>
+          <p><strong>Formula:</strong> R = V ÷ I</p>
+          <p><strong>Substitute:</strong> R = 9 ÷ 0.5</p>
+          <p><strong>Answer: R = 18 Ω</strong></p>
+
+          <!-- Example 4 -->
+          <h3>Example 4 — Converting Milliamps</h3>
+          <p>
+            <strong>Question:</strong> A circuit has a resistance of 500 Ω and a
+            current of 40 mA flows through it. Find the voltage.
+          </p>
+          <p>
+            <strong>Convert first:</strong> 40 mA = 40 ÷ 1000 =
+            <strong>0.04 A</strong>
+          </p>
+          <p>
+            <strong>Given:</strong> I = 0.04 A, R = 500 Ω<br />
+            <strong>Find:</strong> V
+          </p>
+          <p><strong>Formula:</strong> V = I × R</p>
+          <p><strong>Substitute:</strong> V = 0.04 × 500</p>
+          <p><strong>Answer: V = 20 V</strong></p>
+          <p>
+            <em
+              >Key lesson: always convert mA to A before using the formula.</em
+            >
+          </p>
+
+          <!-- Example 5 -->
+          <h3>Example 5 — Series Circuit</h3>
+          <p>
+            <strong>Question:</strong> Two resistors of 6 Ω and 4 Ω are
+            connected in series. A 20 V battery is connected across them. Find
+            the current in the circuit.
+          </p>
+          <p>
+            <strong>Step 1 — Find total resistance:</strong><br />
+            R<sub>total</sub> = 6 + 4 = <strong>10 Ω</strong>
+          </p>
+          <p>
+            <strong>Step 2 — Apply Ohm's Law:</strong><br />
+            I = V ÷ R = 20 ÷ 10
+          </p>
+          <p><strong>Answer: I = 2 A</strong></p>
+
+          <!-- Example 6 -->
+          <h3>Example 6 — Finding Resistance from a Graph</h3>
+          <p>
+            <strong>Question:</strong> A V–I graph for a resistor shows that
+            when V = 6 V, I = 0.3 A. Calculate the resistance.
+          </p>
+          <p><strong>Formula:</strong> R = V ÷ I</p>
+          <p><strong>Substitute:</strong> R = 6 ÷ 0.3</p>
+          <p><strong>Answer: R = 20 Ω</strong></p>
+          <p>
+            <em
+              >On a V–I graph, resistance equals the gradient (slope) of the
+              line. A steeper line means higher resistance.</em
+            >
+          </p>
+
+          <!-- Example 7 -->
+          <h3>Example 7 — Two Step Problem</h3>
+          <p>
+            <strong>Question:</strong> Three resistors of 10 Ω, 15 Ω, and 25 Ω
+            are connected in series to a 100 V supply. Find (a) the total
+            resistance and (b) the current in the circuit.
+          </p>
+          <p>
+            <strong>(a) Total resistance:</strong><br />
+            R<sub>total</sub> = 10 + 15 + 25 = <strong>50 Ω</strong>
+          </p>
+          <p>
+            <strong>(b) Current:</strong><br />
+            I = V ÷ R = 100 ÷ 50
+          </p>
+          <p><strong>Answer: I = 2 A</strong></p>
+
+          <!-- Example 8 -->
+          <h3>Example 8 — Find Voltage Across One Resistor</h3>
+          <p>
+            <strong>Question:</strong> Using the circuit from Example 7 (I = 2
+            A), find the voltage across the 15 Ω resistor.
+          </p>
+          <p><strong>Formula:</strong> V = I × R</p>
+          <p><strong>Substitute:</strong> V = 2 × 15</p>
+          <p><strong>Answer: V = 30 V</strong></p>
+          <p>
+            <em
+              >Notice: in a series circuit the voltages across individual
+              resistors add up to the total supply voltage (30 + 20 + 50 = 100 V
+              ✓).</em
+            >
+          </p>
+
+          <!-- ─── SERIES CIRCUITS ─── -->
+          <h2 id="series-circuits">Resistance in Series Circuits</h2>
+
+          <p>
+            When you connect resistors in series, you place them one after
+            another so that the same current flows through each one. To find the
+            total resistance, simply add all individual resistances together.
+          </p>
+
+          <div class="formula-box">
+            <strong
+              >R<sub>total</sub> = R<sub>1</sub> + R<sub>2</sub> + R<sub>3</sub>
+              + …</strong
+            >
+          </div>
+
+          <p>Key facts about series circuits:</p>
+          <ul>
+            <li>
+              The <strong>current</strong> is the same at every point in the
+              circuit.
+            </li>
+            <li>
+              The <strong>voltages</strong> across each component add up to the
+              supply voltage (V<sub>total</sub> = V<sub>1</sub> + V<sub>2</sub>
+              + …).
+            </li>
+            <li>
+              Adding more resistors in series <strong>increases</strong> total
+              resistance and <strong>decreases</strong> current.
+            </li>
+          </ul>
+
+          <!-- ─── PARALLEL CIRCUITS ─── -->
+          <h2 id="parallel-circuits">Resistance in Parallel Circuits</h2>
+
+          <p>
+            When you connect resistors in parallel, you give current multiple
+            paths to travel. The total resistance of a parallel combination is
+            <em>less than</em> the smallest individual resistor.
+          </p>
+
+          <div class="formula-box">
+            <strong
+              >1/R<sub>total</sub> = 1/R<sub>1</sub> + 1/R<sub>2</sub> + 1/R<sub
+                >3</sub
+              >
+              + …</strong
+            >
+          </div>
+
+          <p>Key facts about parallel circuits:</p>
+          <ul>
+            <li>
+              The <strong>voltage</strong> is the same across every branch.
+            </li>
+            <li>
+              The <strong>currents</strong> in each branch add up to the total
+              current from the source.
+            </li>
+            <li>
+              Adding more resistors in parallel <strong>decreases</strong> total
+              resistance and <strong>increases</strong> total current drawn.
+            </li>
+          </ul>
+
+          <p>
+            This is why household appliances connect in parallel. Each appliance
+            receives the full mains voltage (220 V), and switching one off does
+            not affect the others.
+          </p>
+
+          <!-- ─── COMMON MISTAKES ─── -->
+          <h2 id="common-mistakes">Common Mistakes Students Make</h2>
+
+          <p>
+            After reviewing hundreds of student solutions, these are the errors
+            that cost marks most often:
+          </p>
+
+          <ol>
+            <li>
+              <strong>Forgetting to convert milliamps.</strong> If the question
+              gives current in mA, divide by 1 000 to get amps before
+              substituting. Writing "I = 40 mA" into the formula gives a wrong
+              answer every time.
+            </li>
+            <li>
+              <strong>Using the wrong formula.</strong> Students sometimes write
+              V = I ÷ R by mistake. Remember: V and I are on the same "level" in
+              the triangle — one multiplied by the other. Resistance always
+              divides.
+            </li>
+            <li>
+              <strong>Omitting units in the answer.</strong> Writing "V = 24"
+              scores no marks. Always write the unit: "V = 24 V".
+            </li>
+            <li>
+              <strong
+                >Adding resistors in parallel using the series formula.</strong
+              >
+              In a parallel circuit, you cannot add resistors directly. Use the
+              reciprocal formula.
+            </li>
+            <li>
+              <strong>Not showing working.</strong> Even if your final answer is
+              wrong, correct working earns method marks in O Level papers.
+            </li>
+          </ol>
+
+          <!-- ─── EXAM TIPS ─── -->
+          <h2 id="exam-tips">O Level Exam Tips</h2>
+
+          <ul>
+            <li>
+              <strong>Read the question twice.</strong> Identify every value
+              given (V, I, R) and what you are asked to find before writing
+              anything.
+            </li>
+            <li>
+              <strong>Write the formula first.</strong> Always start your
+              working with the correct version of Ohm's Law, then substitute
+              values. Examiners reward structured answers.
+            </li>
+            <li>
+              <strong>Check your units.</strong> Volts, amperes, and ohms must
+              be consistent. Never mix mA and A in the same calculation.
+            </li>
+            <li>
+              <strong>In series circuits, find total resistance first.</strong>
+              Sum all resistors before applying V = IR.
+            </li>
+            <li>
+              <strong>Check with a sense test.</strong> More resistance → less
+              current. If your answer contradicts this, recheck your
+              substitution.
+            </li>
+            <li>
+              <strong>For V–I graph questions,</strong> remember that the slope
+              (gradient) of the line equals resistance. A straight line through
+              the origin confirms Ohm's Law holds.
+            </li>
+          </ul>
+
+          <!-- ─── PRACTICE QUESTIONS ─── -->
+          <h2 id="practice-questions">Practice Questions</h2>
+
+          <p>Try these yourself before checking the answers below.</p>
+
+          <ol>
+            <li>
+              A 6 V battery connects to a 30 Ω resistor. Find the current.
+            </li>
+            <li>
+              A current of 2 A flows through a 12 Ω resistor. Find the voltage.
+            </li>
+            <li>
+              A 9 V source drives 180 mA through a resistor. Find the
+              resistance.
+            </li>
+            <li>
+              Three 20 Ω resistors connect in series to a 60 V supply. Find the
+              current.
+            </li>
+            <li>
+              A voltmeter reads 15 V and an ammeter reads 0.5 A. What is the
+              resistance?
+            </li>
+          </ol>
+
+          <details>
+            <summary><strong>Show Answers</strong></summary>
+            <ol>
+              <li>I = 6 ÷ 30 = <strong>0.2 A</strong></li>
+              <li>V = 2 × 12 = <strong>24 V</strong></li>
+              <li>
+                Convert 180 mA → 0.18 A. R = 9 ÷ 0.18 = <strong>50 Ω</strong>
+              </li>
+              <li>
+                R<sub>total</sub> = 60 Ω. I = 60 ÷ 60 = <strong>1 A</strong>
+              </li>
+              <li>R = 15 ÷ 0.5 = <strong>30 Ω</strong></li>
+            </ol>
+          </details>
+        </div>
+      </section>
+    </main>
+
+    <!-- AD -->
+    <div class="container">
+      <div class="ad-slot ad-slot-rectangle">Advertisement</div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <div class="nav-logo" style="font-size: 1.1rem">
+              STEMBridge Tools
+            </div>
+            <p>
+              Free, step-by-step STEM tools for students in Class 6 through O
+              Level. Learn the method — not just the answer.
+            </p>
+          </div>
+          <div class="footer-col">
+            <h4>Tools</h4>
+            <ul>
+              <li><a href="physics.html">Physics Solver</a></li>
+              <li><a href="chemistry.html">Chemistry Balancer</a></li>
+              <li><a href="math.html">Maths Translator</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Company</h4>
+            <ul>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="blogs.html">Blogs</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Legal</h4>
+            <ul>
+              <li><a href="privacy.html">Privacy Policy</a></li>
+              <li><a href="disclaimer.html">Disclaimer</a></li>
+              <li>
+                <a href="terms-and-conditions.html">Terms and Conditions</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span>© 2026 STEMBridge Tools. All rights reserved.</span>
+          <span>
+            <a href="privacy.html">Privacy Policy</a> ·
+            <a href="disclaimer.html">Disclaimer</a> ·
+            <a href="terms-and-conditions.html">Terms and Conditions</a>
+          </span>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../js/shared.js"></script>
+  </body>
+</html>

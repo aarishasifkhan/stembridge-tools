@@ -1,0 +1,382 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-S5CRK1K9G9"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-S5CRK1K9G9');
+</script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Physics Numerical Solver — Step-by-Step Solutions | STEMBridge Tools
+    </title>
+    <meta
+      name="description"
+      content="Solve physics numericals online with full step-by-step explanations. Covers speed, force, work, power, pressure, Ohm's Law, kinetic energy, and density. Perfect for Class 6–O Level students."
+    />
+    <meta
+      name="keywords"
+      content="physics solver online, physics numerical solver, speed distance time calculator, force calculator, Ohm's law calculator, kinetic energy solver, physics steps"
+    />
+    <meta name="robots" content="index, follow" />
+    <link
+      rel="canonical"
+    href="https://stembridgetools.netlify.app/pages/physics.html"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="../assets/stembridge-tools.png"
+    />
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header class="site-header">
+      <div class="container">
+        <nav class="nav">
+          <a href="../index.html" class="nav-logo"> STEMBridge Tools </a>
+          <ul class="nav-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="physics.html">Physics</a></li>
+            <li><a href="chemistry.html">Chemistry</a></li>
+            <li><a href="math.html">Maths</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="contact.html" class="nav-cta">Contact</a></li>
+          </ul>
+          <button
+            class="nav-hamburger"
+            id="navHamburger"
+            aria-label="Open menu"
+          >
+            <span></span><span></span><span></span>
+          </button>
+        </nav>
+      </div>
+      <nav class="nav-mobile" id="navMobile">
+        <a href="../index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="physics.html">Physics Solver</a>
+        <a href="chemistry.html">Chemistry Balancer</a>
+        <a href="math.html">Maths Translator</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <!-- TOOL HERO -->
+    <section class="tool-hero">
+      <div class="container">
+        <div class="badge">⚡ Physics Numerical Solver</div>
+        <h1>Solve Physics Problems<br />Step by Step</h1>
+        <p>
+          Choose a formula, enter what you know, leave the unknown blank, and
+          get a full explanation — just like your teacher would give you.
+        </p>
+      </div>
+    </section>
+
+    <!-- AD SLOT -->
+    <div class="container">
+      <div class="ad-slot ad-slot-leaderboard">Advertisement</div>
+    </div>
+
+    <!-- TOOL WORKSPACE -->
+    <section class="section">
+      <div class="container">
+        <div class="tool-workspace">
+          <!-- INPUT PANEL -->
+          <div class="tool-panel">
+            <div class="tool-panel-header">
+              <div class="panel-dot dot-blue"></div>
+              <h3>Enter Your Values</h3>
+            </div>
+            <div class="tool-panel-body">
+              <div class="form-group">
+                <label for="physicsTopic">Select Formula / Topic</label>
+                <select id="physicsTopic">
+                  <option value="speed">Speed / Velocity (v = d ÷ t)</option>
+                  <option value="force">
+                    Force — Newton's 2nd Law (F = ma)
+                  </option>
+                  <option value="work">Work Done (W = F × d)</option>
+                  <option value="power">Power (P = W ÷ t)</option>
+                  <option value="pressure">Pressure (P = F ÷ A)</option>
+                  <option value="ohm">Ohm's Law (V = I × R)</option>
+                  <option value="ke">Kinetic Energy (KE = ½mv²)</option>
+                  <option value="density">Density (ρ = m ÷ V)</option>
+                </select>
+              </div>
+
+              <!-- Dynamic inputs rendered by JS -->
+              <div id="physicsFormula"></div>
+
+              <button class="btn-solve" id="physicsSolve">⚡ Solve It</button>
+
+              <div class="info-block tip" style="margin-top: 16px">
+                <span class="ib-icon">💡</span>
+                <p>
+                  <strong>How to use:</strong> Fill in the values you know.
+                  Leave exactly <strong>one</strong> field blank — that is the
+                  value we will calculate and explain for you.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- OUTPUT PANEL -->
+          <div class="tool-panel">
+            <div class="tool-panel-header">
+              <div class="panel-dot dot-green"></div>
+              <h3>Step-by-Step Solution</h3>
+            </div>
+            <div class="tool-panel-body">
+              <div id="physicsOutput">
+                <p class="output-placeholder">
+                  Your step-by-step solution will appear here once you click
+                  Solve. Each step is explained in plain English so you can
+                  follow along and understand the method.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- AD SLOT -->
+    <div class="container">
+      <div class="ad-slot ad-slot-rectangle">Advertisement</div>
+    </div>
+
+    <!-- FORMULAS REFERENCE -->
+    <section class="section section--gray">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Quick Reference</span>
+          <h2>All Eight Formulas at a Glance</h2>
+          <p>
+            These are the core formulas in the solver. Knowing what each
+            variable represents is the first step to solving any numerical.
+          </p>
+        </div>
+
+        <div class="tools-grid" style="margin-top: 36px">
+          <div class="tool-card" style="cursor: default; pointer-events: none">
+            <div class="card-icon card-icon--blue">v</div>
+            <h3>Speed</h3>
+            <p>
+              <strong>v = d ÷ t</strong><br />v = speed, d = distance, t = time.
+              Speed tells you how much distance is covered every unit of time.
+            </p>
+          </div>
+          <div class="tool-card" style="cursor: default; pointer-events: none">
+            <div class="card-icon card-icon--purple">F</div>
+            <h3>Force</h3>
+            <p>
+              <strong>F = m × a</strong><br />F = force (N), m = mass (kg), a =
+              acceleration (m/s²). This is Newton's Second Law of Motion.
+            </p>
+          </div>
+          <div class="tool-card" style="cursor: default; pointer-events: none">
+            <div class="card-icon card-icon--green">W</div>
+            <h3>Work Done</h3>
+            <p>
+              <strong>W = F × d</strong><br />Work is only done when a force
+              moves an object. If there's no movement, there's no work done —
+              even if you're pushing hard!
+            </p>
+          </div>
+          <div class="tool-card" style="cursor: default; pointer-events: none">
+            <div class="card-icon card-icon--orange">P</div>
+            <h3>Power</h3>
+            <p>
+              <strong>P = W ÷ t</strong><br />Power is the rate of doing work. A
+              100 W bulb transfers 100 J of energy every single second.
+            </p>
+          </div>
+          <div class="tool-card" style="cursor: default; pointer-events: none">
+            <div class="card-icon card-icon--blue">Pa</div>
+            <h3>Pressure</h3>
+            <p>
+              <strong>P = F ÷ A</strong><br />Same force over a smaller area →
+              higher pressure. That is why a knife cuts but a spoon does not.
+            </p>
+          </div>
+          <div class="tool-card" style="cursor: default; pointer-events: none">
+            <div class="card-icon card-icon--purple">V</div>
+            <h3>Ohm's Law</h3>
+            <p>
+              <strong>V = I × R</strong><br />V = voltage (V), I = current (A),
+              R = resistance (Ω). The foundation of all basic circuit problems.
+            </p>
+          </div>
+          <div class="tool-card" style="cursor: default; pointer-events: none">
+            <div class="card-icon card-icon--green">KE</div>
+            <h3>Kinetic Energy</h3>
+            <p>
+              <strong>KE = ½mv²</strong><br />The energy an object has because
+              it is moving. Velocity is squared, so doubling speed quadruples
+              KE!
+            </p>
+          </div>
+          <div class="tool-card" style="cursor: default; pointer-events: none">
+            <div class="card-icon card-icon--orange">ρ</div>
+            <h3>Density</h3>
+            <p>
+              <strong>ρ = m ÷ V</strong><br />Density tells you how much mass is
+              packed into a given volume. Lead is denser than wood — more mass,
+              same volume.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- HOW TO SOLVE -->
+    <section class="section">
+      <div class="container prose">
+        <h2>How to Solve Physics Numericals — A Student Guide</h2>
+        <p>
+          Many students panic when they see a physics numerical. The good news:
+          every numerical follows the same process. Once you know the process,
+          no formula can trip you up.
+        </p>
+
+        <h3>Step 1 — Read the Question and List What You Know</h3>
+        <p>
+          Before touching a formula, write down every piece of information the
+          question gives you. Write the symbol and value next to each other. For
+          example: d = 150 m, t = 30 s. This instantly shows you what you have
+          and what you are missing.
+        </p>
+
+        <h3>Step 2 — Identify the Unknown</h3>
+        <p>
+          The question always tells you what to find. Underline or circle it.
+          Write it down as: Find: v = ? Now you know exactly which formula you
+          need — the one that connects what you know to what you need to find.
+        </p>
+
+        <h3>Step 3 — Write the Formula First</h3>
+        <p>
+          Write the formula in full before substituting any numbers. This is a
+          habit that earns marks even if you make a calculation error later.
+          Examiners reward method marks.
+        </p>
+
+        <h3>Step 4 — Substitute Carefully</h3>
+        <p>
+          Replace each symbol with its value. Keep the units next to every
+          number. This helps you catch mistakes — if the units do not simplify
+          correctly, something is wrong.
+        </p>
+
+        <h3>Step 5 — Calculate and State Your Answer With Units</h3>
+        <p>
+          Do the arithmetic, round sensibly (2–3 significant figures is usually
+          right), and write a clear final statement: "Speed = 5 m/s". An answer
+          without units is an incomplete answer.
+        </p>
+
+        <div class="info-block note">
+          <span class="ib-icon">📌</span>
+          <p>
+            <strong>Golden rule:</strong> Always include the unit in your final
+            answer. In O Level marking schemes, a missing unit often costs you a
+            mark — even if your number is correct.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- RELATED TOOLS -->
+    <section class="section section--gray">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Related Tools</span>
+          <h2>Keep Solving with These Tools</h2>
+        </div>
+        <div class="related-tools">
+          <a href="chemistry.html" class="related-card">
+            <div class="rc-icon card-icon--green">⚗️</div>
+            <div>
+              <h4>Chemical Equation Balancer</h4>
+              <p>Balance any equation step by step</p>
+            </div>
+          </a>
+          <a href="math.html" class="related-card">
+            <div class="rc-icon card-icon--orange">🔢</div>
+            <div>
+              <h4>Maths Word Problem Translator</h4>
+              <p>Turn word problems into equations</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <div class="nav-logo" style="font-size: 1.1rem">
+              STEMBridge Tools
+            </div>
+            <p>
+              Free, step-by-step STEM tools for students in Class 6 through O
+              Level. Learn the method — not just the answer.
+            </p>
+          </div>
+          <div class="footer-col">
+            <h4>Tools</h4>
+            <ul>
+              <li><a href="physics.html">Physics Solver</a></li>
+              <li><a href="chemistry.html">Chemistry Balancer</a></li>
+              <li><a href="math.html">Maths Translator</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Company</h4>
+            <ul>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="blogs.html">Blogs</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Legal</h4>
+            <ul>
+              <li><a href="privacy.html">Privacy Policy</a></li>
+              <li><a href="disclaimer.html">Disclaimer</a></li>
+              <li>
+                <a href="terms-and-conditions.html"
+                  >Terms and Conditions</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span>© 2026 STEMBridge Tools. All rights reserved.</span>
+          <span
+            ><a href="privacy.html">Privacy Policy</a>
+            ·
+            <a href="disclaimer.html">Disclaimer</a>
+            ·
+            <a href="terms-and-conditions.html">Terms and Conditions</a>
+          >
+        </div>
+      </div>
+    </footer>
+
+    <script src="../js/shared.js"></script>
+    <script src="../js/physics.js"></script>
+  </body>
+</html>

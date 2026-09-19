@@ -1,0 +1,515 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-S5CRK1K9G9"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-S5CRK1K9G9');
+  </script>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>STEMBridge Tools — Free Online STEM Tools for Students (Class 6–O Level)</title>
+  <meta name="description" content="STEMBridge Tools offers free, step-by-step physics solvers, chemical equation balancers, and math word problem translators for students in Class 6 through O Level. Learn while you solve." />
+  <meta name="keywords" content="physics solver online, chemical equation balancer with steps, math word problem solver for students, STEM tools for students, online science calculator" />
+  <meta name="robots" content="index, follow" />
+
+  <!-- ✅ FIXED: Canonical now points to actual live URL -->
+  <link rel="canonical" href="https://stembridgetools.netlify.app/" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="STEMBridge Tools — Free STEM Tools for Students" />
+  <meta property="og:description" content="Step-by-step physics, chemistry, and maths tools built for students. No sign-up needed." />
+  <meta property="og:type" content="website" />
+  <!-- ✅ ADDED: og:url and og:image -->
+  <meta property="og:url" content="https://stembridgetools.netlify.app/" />
+  <meta property="og:image" content="https://stembridgetools.netlify.app/assets/stembridge-tools.png" />
+
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" type="image/svg+xml" href="./assets/stembridge-tools.png" />
+</head>
+  <body>
+    <!-- ===== HEADER ===== -->
+    <header class="site-header">
+      <div class="container">
+        <nav class="nav">
+          <a href="./index.html" class="nav-logo"> STEMBridge Tools </a>
+          <ul class="nav-links">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./pages/about.html">About</a></li>
+            <li><a href="./pages/physics.html">Physics</a></li>
+            <li><a href="./pages/chemistry.html">Chemistry</a></li>
+            <li><a href="./pages/math.html">Maths</a></li>
+            <li><a href="./pages/privacy.html">Privacy Policy</a></li>
+            <li><a href="./pages/contact.html" class="nav-cta">Contact</a></li>
+          </ul>
+          <button
+            class="nav-hamburger"
+            id="navHamburger"
+            aria-label="Open menu"
+          >
+            <span></span><span></span><span></span>
+          </button>
+        </nav>
+      </div>
+      <nav class="nav-mobile" id="navMobile">
+        <a href="./index.html">Home</a>
+        <a href="./pages/about.html">About Us</a>
+        <a href="./pages/physics.html">Physics Solver</a>
+        <a href="./pages/chemistry.html">Chemistry Balancer</a>
+        <a href="./pages/math.html">Maths Translator</a>
+        <a href="./pages/privacy.html">Privacy Policy</a>
+        <a href="./pages/contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <!-- ===== HERO ===== -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero-badge">🎓 Built for Class 6 – O Level Students</div>
+        <h1>Understand <span>STEM</span> One Step at a Time</h1>
+        <p>
+          Free tools that don't just give you answers — they show you exactly
+          <em>how</em> to solve physics problems, balance chemical equations,
+          and crack maths word problems.
+        </p>
+        <div class="btn-group">
+          <a href="pages/physics.html" class="btn btn-primary"
+            >⚡ Try Physics Solver</a
+          >
+          <a href="pages/chemistry.html" class="btn btn-outline"
+            >⚗️ Balance an Equation</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== AD SLOT (TOP) ===== -->
+    <div class="container">
+      <div class="ad-slot ad-slot-leaderboard">Advertisement</div>
+    </div>
+
+    <!-- ===== TOOLS GRID ===== -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Our Tools</span>
+          <h2>Three Tools. Unlimited Practice.</h2>
+          <p>
+            Every tool walks you through the solution step by step — so you
+            learn the method, not just the answer.
+          </p>
+        </div>
+
+        <div class="tools-grid">
+          <!-- Physics -->
+          <a href="pages/physics.html" class="tool-card">
+            <div class="card-icon card-icon--blue">⚡</div>
+            <h3>Physics Numerical Solver</h3>
+            <p>
+              Solve speed, force, work, power, pressure, Ohm's Law, kinetic
+              energy, and density problems. Enter two values, leave one blank,
+              and get a full step-by-step solution.
+            </p>
+            <ul style="padding-left: 18px; margin-bottom: 8px">
+              <li
+                style="
+                  list-style: disc;
+                  font-size: 0.87rem;
+                  color: var(--gray-600);
+                "
+              >
+                8 formula types covered
+              </li>
+              <li
+                style="
+                  list-style: disc;
+                  font-size: 0.87rem;
+                  color: var(--gray-600);
+                "
+              >
+                Real-world explanations for each step
+              </li>
+              <li
+                style="
+                  list-style: disc;
+                  font-size: 0.87rem;
+                  color: var(--gray-600);
+                "
+              >
+                Unit reminders built in
+              </li>
+            </ul>
+            <span class="card-link">Try Physics Solver →</span>
+          </a>
+
+          <!-- Chemistry -->
+          <a href="pages/chemistry.html" class="tool-card">
+            <div class="card-icon card-icon--green">⚗️</div>
+            <h3>Chemical Equation Balancer</h3>
+            <p>
+              Type a chemical equation and get a step-by-step balancing guide
+              that explains <em>why</em> each coefficient goes where it goes —
+              not just the final answer.
+            </p>
+            <ul style="padding-left: 18px; margin-bottom: 8px">
+              <li
+                style="
+                  list-style: disc;
+                  font-size: 0.87rem;
+                  color: var(--gray-600);
+                "
+              >
+                9 common reactions with full walkthroughs
+              </li>
+              <li
+                style="
+                  list-style: disc;
+                  font-size: 0.87rem;
+                  color: var(--gray-600);
+                "
+              >
+                Covers combustion, neutralisation, oxidation
+              </li>
+              <li
+                style="
+                  list-style: disc;
+                  font-size: 0.87rem;
+                  color: var(--gray-600);
+                "
+              >
+                Exam tips included for each reaction
+              </li>
+            </ul>
+            <span class="card-link">Try Chemistry Balancer →</span>
+          </a>
+
+          <!-- Maths -->
+          <a href="pages/math.html" class="tool-card">
+            <div class="card-icon card-icon--orange">🔢</div>
+            <h3>Math Word Problem Translator</h3>
+            <p>
+              Stuck on a word problem? Paste it in and the tool identifies the
+              type (age, ratio, speed, percentage, and more), translates it into
+              an equation, and solves it step by step.
+            </p>
+            <ul style="padding-left: 18px; margin-bottom: 8px">
+              <li
+                style="
+                  list-style: disc;
+                  font-size: 0.87rem;
+                  color: var(--gray-600);
+                "
+              >
+                7 problem categories handled
+              </li>
+              <li
+                style="
+                  list-style: disc;
+                  font-size: 0.87rem;
+                  color: var(--gray-600);
+                "
+              >
+                Teaches you the method, not just the answer
+              </li>
+              <li
+                style="
+                  list-style: disc;
+                  font-size: 0.87rem;
+                  color: var(--gray-600);
+                "
+              >
+                Works with numbers from your own problem
+              </li>
+            </ul>
+            <span class="card-link">Try Maths Translator →</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== STATS ===== -->
+    <div class="stats-strip">
+      <div class="container">
+        <div class="stats-row">
+          <div class="stat-item">
+            <span class="stat-num">8+</span>
+            <span class="stat-label">Physics Formulas</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-num">9+</span>
+            <span class="stat-label">Balanced Reactions</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-num">7</span>
+            <span class="stat-label">Maths Problem Types</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-num">100%</span>
+            <span class="stat-label">Free, Always</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===== HOW IT WORKS ===== -->
+    <section class="section section--gray">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">How It Works</span>
+          <h2>From Confusion to Clarity in Four Steps</h2>
+          <p>
+            No account. No download. No nonsense. Just type, click, and
+            understand.
+          </p>
+        </div>
+        <div class="steps-row">
+          <div class="step-box">
+            <h4>Choose Your Tool</h4>
+            <p>
+              Pick Physics, Chemistry, or Maths — depending on which problem you
+              need to solve today.
+            </p>
+          </div>
+          <div class="step-box">
+            <h4>Enter Your Values</h4>
+            <p>
+              Type in the numbers from your question. Leave the unknown field
+              blank — that is what we find for you.
+            </p>
+          </div>
+          <div class="step-box">
+            <h4>Read the Steps</h4>
+            <p>
+              Get a numbered, plain-English walkthrough that explains every
+              single step — like a teacher standing next to you.
+            </p>
+          </div>
+          <div class="step-box">
+            <h4>Learn the Method</h4>
+            <p>
+              Each solution includes a real-world explanation and an exam tip,
+              so you understand the concept — not just this one problem.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FEATURES ===== -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Why STEMBridge?</span>
+          <h2>Designed With Students in Mind</h2>
+          <p>
+            We built this tool because we know what it feels like to stare at a
+            blank page during revision.
+          </p>
+        </div>
+        <div class="features-grid">
+          <div class="feature-item">
+            <span class="fi-icon">📖</span>
+            <h4>Step-by-Step Explanations</h4>
+            <p>
+              Every answer comes with a numbered breakdown. You see exactly how
+              to get from question to answer.
+            </p>
+          </div>
+          <div class="feature-item">
+            <span class="fi-icon">🧠</span>
+            <h4>Concept-First Approach</h4>
+            <p>
+              We explain the <em>why</em> behind every formula — not just the
+              mechanical steps.
+            </p>
+          </div>
+          <div class="feature-item">
+            <span class="fi-icon">📱</span>
+            <h4>Works on Any Device</h4>
+            <p>
+              Phone, tablet, or laptop — the layout adapts perfectly. Revise
+              anywhere, anytime.
+            </p>
+          </div>
+          <div class="feature-item">
+            <span class="fi-icon">⚡</span>
+            <h4>Fast and Lightweight</h4>
+            <p>
+              No heavy frameworks, no unnecessary downloads. The page loads in
+              seconds even on slow connections.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== AD SLOT (MIDDLE) ===== -->
+    <div class="container">
+      <div class="ad-slot ad-slot-rectangle">Advertisement</div>
+    </div>
+
+<!-- ===== TESTIMONIALS ===== -->
+    <section class="section section--gray">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Student Feedback</span>
+          <h2>What Students Say</h2>
+          <p>
+            Real feedback from students who use STEMBridge Tools for their
+            revision.
+          </p>
+        </div>
+        <div class="testimonials-grid">
+          <div class="testimonial-card">
+            <div class="tc-stars">★★★★★</div>
+            <p class="tc-quote">
+              "I always struggled with Ohm's Law questions. This tool showed me
+              each step so clearly that I finally understood where the formula
+              comes from. Got full marks in my test!"
+            </p>
+            <div class="tc-author">
+              <div class="tc-avatar">
+                <img src="assets/mufassir-abbasi.jpeg" alt="Mufassir Abbasi" />
+              </div>
+              <div>
+                <div class="tc-name">Mufassir Abbasi</div>
+                <div class="tc-role">Class 9 Student</div>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <div class="tc-stars">★★★★★</div>
+            <p class="tc-quote">
+              "The chemistry balancer doesn't just give the answer — it explains
+              WHY you put a 2 in front of H₂. My teacher used to do this on the
+              board and I could never follow along. Now I get it."
+            </p>
+            <div class="tc-author">
+              <div class="tc-avatar">
+                <img src="assets/shawaiz-abbasi.jpeg" alt="Shawaiz Abbasi" />
+              </div>
+              <div>
+                <div class="tc-name">Shawaiz Abbasi</div>
+                <div class="tc-role">O Level Student</div>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <div class="tc-stars">★★★★★</div>
+            <p class="tc-quote">
+              "Maths word problems were a nightmare for me — I never knew where
+              to start. The translator helped me see the pattern, and now I can
+              identify the type of problem straight away."
+            </p>
+            <div class="tc-author">
+              <div class="tc-avatar">
+                <img src="assets/shaff-wasim.jpeg" alt="Shaff Wasim" />
+              </div>
+              <div>
+                <div class="tc-name">Shaff Wasim</div>
+                <div class="tc-role">Class 10 Student</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CTA ===== -->
+    <section
+      class="section"
+      style="
+        text-align: center;
+        background: linear-gradient(
+          135deg,
+          var(--blue-light),
+          var(--purple-light)
+        );
+      "
+    >
+      <div class="container">
+        <h2 style="font-size: clamp(1.6rem, 3vw, 2.2rem); margin-bottom: 14px">
+          Ready to Start Solving?
+        </h2>
+        <p
+          style="color: var(--gray-600); max-width: 480px; margin: 0 auto 28px"
+        >
+          Pick a tool and start learning. Every problem is a chance to
+          understand something better.
+        </p>
+        <div class="btn-group">
+          <a href="pages/physics.html" class="btn btn-primary"
+            >⚡ Physics Solver</a
+          >
+          <a href="pages/chemistry.html" class="btn btn-outline"
+            >⚗️ Chemistry Balancer</a
+          >
+          <a href="pages/math.html" class="btn btn-outline"
+            >🔢 Maths Translator</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <div class="nav-logo" style="font-size: 1.1rem">
+              STEMBridge Tools
+            </div>
+            <p>
+              Free, step-by-step STEM tools for students in Class 6 through O
+              Level. Learn the method — not just the answer.
+            </p>
+          </div>
+          <div class="footer-col">
+            <h4>Tools</h4>
+            <ul>
+              <li><a href="pages/physics.html">Physics Solver</a></li>
+              <li><a href="pages/chemistry.html">Chemistry Balancer</a></li>
+              <li><a href="pages/math.html">Maths Translator</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Company</h4>
+            <ul>
+              <li><a href="pages/about.html">About Us</a></li>
+              <li><a href="pages/contact.html">Contact</a></li>
+              <li><a href="pages/blogs.html">Blogs</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Legal</h4>
+            <ul>
+              <li><a href="pages/privacy.html">Privacy Policy</a></li>
+              <li><a href="pages/disclaimer.html">Disclaimer</a></li>
+              <li>
+                <a href="pages/terms-and-conditions.html"
+                  >Terms and Conditions</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span>© 2026 STEMBridge Tools. All rights reserved.</span>
+          <span
+            ><a href="pages/privacy.html">Privacy Policy</a>
+            ·
+            <a href="pages/disclaimer.html">Disclaimer</a>
+            ·
+            <a href="pages/terms-and-conditions.html">Terms and Conditions</a>
+          >
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/shared.js"></script>
+  </body>
+</html>

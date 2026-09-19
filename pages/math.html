@@ -1,0 +1,536 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-S5CRK1K9G9"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-S5CRK1K9G9");
+    </script>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- ✅ FIX 1: Title unchanged — it's good -->
+    <title>Math Word Problem Solver for Students — STEMBridge Tools</title>
+
+    <!-- Primary Meta -->
+    <meta
+      name="description"
+      content="Solve maths word problems step by step. Our translator identifies the problem type — age, ratio, speed, percentage, interest, and more — and walks you through the solution. Free for Class 6–O Level students."
+    />
+    <meta
+      name="keywords"
+      content="math word problem solver for students, maths word problems step by step, algebra word problems, age problems, ratio problems, percentage calculator students"
+    />
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="STEMBridge Tools" />
+
+    <!-- ✅ FIX 2: Canonical now points to your LIVE Netlify URL, not the non-existent .com domain -->
+    <link
+      rel="canonical"
+      href="https://stembridgetools.netlify.app/pages/math.html"
+    />
+
+    <!-- ✅ FIX 3: Open Graph tags added (helps Google + social sharing signals) -->
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="Math Word Problem Solver for Students — STEMBridge Tools"
+    />
+    <meta
+      property="og:description"
+      content="Solve maths word problems step by step. Identifies age, ratio, speed, percentage, interest problems and walks you through every step. Free for Class 6–O Level students."
+    />
+    <meta
+      property="og:url"
+      content="https://stembridgetools.netlify.app/pages/math.html"
+    />
+    <meta property="og:site_name" content="STEMBridge Tools" />
+
+    <!-- ✅ FIX 4: Twitter Card tags added -->
+    <meta name="twitter:card" content="summary" />
+    <meta
+      name="twitter:title"
+      content="Math Word Problem Solver for Students — STEMBridge Tools"
+    />
+    <meta
+      name="twitter:description"
+      content="Solve maths word problems step by step. Free for Class 6–O Level students."
+    />
+
+    <!-- ✅ FIX 5: Structured Data / Schema Markup added — helps Google understand the page -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "Math Word Problem Solver",
+        "url": "https://stembridgetools.netlify.app/pages/math.html",
+        "description": "Solve maths word problems step by step. Identifies age, ratio, speed, percentage, interest, and average problems and walks students through every solution.",
+        "applicationCategory": "EducationApplication",
+        "operatingSystem": "Any",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "STEMBridge Tools",
+          "url": "https://stembridgetools.netlify.app"
+        },
+        "audience": {
+          "@type": "EducationalAudience",
+          "educationalRole": "student"
+        }
+      }
+    </script>
+
+    <link rel="stylesheet" href="../css/style.css" />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="../assets/stembridge-tools.png"
+    />
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header class="site-header">
+      <div class="container">
+        <nav class="nav">
+          <a href="../index.html" class="nav-logo"> STEMBridge Tools </a>
+          <ul class="nav-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="physics.html">Physics</a></li>
+            <li><a href="chemistry.html">Chemistry</a></li>
+            <li><a href="math.html">Maths</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="contact.html" class="nav-cta">Contact</a></li>
+          </ul>
+          <button
+            class="nav-hamburger"
+            id="navHamburger"
+            aria-label="Open menu"
+          >
+            <span></span><span></span><span></span>
+          </button>
+        </nav>
+      </div>
+      <nav class="nav-mobile" id="navMobile">
+        <a href="../index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="physics.html">Physics Solver</a>
+        <a href="chemistry.html">Chemistry Balancer</a>
+        <a href="math.html">Maths Translator</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <!-- HERO -->
+    <section class="tool-hero">
+      <div class="container">
+        <div class="badge">🔢 Maths Word Problem Translator</div>
+        <h1>Turn Word Problems Into<br />Solvable Equations</h1>
+        <p>
+          Paste your word problem below. The tool identifies what type of
+          problem it is, shows you how to set it up, and walks you through the
+          solution.
+        </p>
+      </div>
+    </section>
+
+    <!-- AD SLOT -->
+    <div class="container">
+      <div class="ad-slot ad-slot-leaderboard">Advertisement</div>
+    </div>
+
+    <!-- TOOL WORKSPACE -->
+    <section class="section">
+      <div class="container">
+        <div class="tool-workspace">
+          <!-- INPUT -->
+          <div class="tool-panel">
+            <div class="tool-panel-header">
+              <div class="panel-dot dot-blue"></div>
+              <h3>Enter Your Word Problem</h3>
+            </div>
+            <div class="tool-panel-body">
+              <div class="form-group">
+                <label for="mathInput"
+                  >Paste or type your word problem here</label
+                >
+                <textarea
+                  id="mathInput"
+                  style="min-height: 160px"
+                  placeholder="Example: A car travels 240 km in 4 hours. Find its speed.&#10;&#10;Or: Sara is 3 times as old as Tom. In 6 years, Sara will be twice Tom's age. Find their current ages."
+                ></textarea>
+              </div>
+
+              <p
+                style="
+                  font-size: 0.85rem;
+                  color: var(--gray-600);
+                  margin-bottom: 10px;
+                  font-weight: 600;
+                "
+              >
+                Try an example problem:
+              </p>
+              <div class="examples-bar">
+                <span
+                  class="example-chip math-chip"
+                  data-prob="A car travels 240 km in 4 hours. Find its speed."
+                  >Speed problem</span
+                >
+                <span
+                  class="example-chip math-chip"
+                  data-prob="Sara is twice as old as Tom. In 8 years, Sara will be 1.5 times Tom's age. Find their current ages."
+                  >Age problem</span
+                >
+                <span
+                  class="example-chip math-chip"
+                  data-prob="Divide Rs 500 in the ratio 3:2 between Ali and Bilal."
+                  >Ratio problem</span
+                >
+                <span
+                  class="example-chip math-chip"
+                  data-prob="A shirt costs Rs 800. It is on sale with a 25% discount. Find the sale price."
+                  >Percentage problem</span
+                >
+                <span
+                  class="example-chip math-chip"
+                  data-prob="Find the simple interest on Rs 5000 at 8% per annum for 3 years."
+                  >Interest problem</span
+                >
+                <span
+                  class="example-chip math-chip"
+                  data-prob="The average of 5 numbers is 14. Four of the numbers are 12, 18, 10, and 16. Find the fifth number."
+                  >Average problem</span
+                >
+                <span
+                  class="example-chip math-chip"
+                  data-prob="A number when doubled and increased by 7 equals 23. Find the number."
+                  >Number problem</span
+                >
+              </div>
+
+              <button class="btn-solve" id="mathSolve" style="margin-top: 20px">
+                🔢 Translate &amp; Solve
+              </button>
+
+              <div class="info-block tip" style="margin-top: 16px">
+                <span class="ib-icon">💡</span>
+                <p>
+                  Type your problem in plain English with the numbers included.
+                  The tool reads the keywords (like "older", "ratio", "speed",
+                  "percent") to identify the type and apply the right method.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- OUTPUT -->
+          <div class="tool-panel">
+            <div class="tool-panel-header">
+              <div class="panel-dot dot-green"></div>
+              <h3>Translation &amp; Solution</h3>
+            </div>
+            <div class="tool-panel-body">
+              <div id="mathOutput">
+                <p class="output-placeholder">
+                  Your step-by-step solution will appear here. The tool will
+                  identify the problem type, show you how to translate the words
+                  into an equation, and walk you through every step.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- AD SLOT -->
+    <div class="container">
+      <div class="ad-slot ad-slot-rectangle">Advertisement</div>
+    </div>
+
+    <!-- PROBLEM TYPES -->
+    <section class="section section--gray">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Problem Types</span>
+          <h2>Seven Types of Word Problems — All Covered</h2>
+          <p>
+            Our tool handles the most common word problem types that appear in
+            Class 6 through O Level exams.
+          </p>
+        </div>
+        <div class="tools-grid" style="margin-top: 36px">
+          <div class="tool-card" style="cursor: default; pointer-events: none">
+            <div class="card-icon card-icon--blue">👴</div>
+            <h3>Age Problems</h3>
+            <p>
+              Find someone's current, past, or future age using statements like
+              "twice as old", "10 years ago", or "in 5 years will be". Set up x
+              = unknown age, then form an equation.
+            </p>
+          </div>
+          <div class="tool-card" style="cursor: default; pointer-events: none">
+            <div class="card-icon card-icon--green">⚖️</div>
+            <h3>Ratio Problems</h3>
+            <p>
+              Split a total amount according to a given ratio. Find one "part"
+              by dividing the total by the sum of the ratio, then multiply each
+              ratio number by that part.
+            </p>
+          </div>
+          <div class="tool-card" style="cursor: default; pointer-events: none">
+            <div class="card-icon card-icon--orange">🚗</div>
+            <h3>Speed, Distance &amp; Time</h3>
+            <p>
+              Use v = d ÷ t and its rearrangements to find speed, distance, or
+              time from a word problem. Watch your units — km/h vs m/s makes a
+              huge difference.
+            </p>
+          </div>
+          <div class="tool-card" style="cursor: default; pointer-events: none">
+            <div class="card-icon card-icon--purple">💯</div>
+            <h3>Percentage Problems</h3>
+            <p>
+              Calculate percentages of amounts, find percentage increase or
+              decrease, or work out discounts and profits. Master this topic and
+              you are set for both maths and everyday life.
+            </p>
+          </div>
+          <div class="tool-card" style="cursor: default; pointer-events: none">
+            <div class="card-icon card-icon--blue">🏦</div>
+            <h3>Simple Interest</h3>
+            <p>
+              Use SI = (P × R × T) ÷ 100. A classic topic for O Level maths and
+              very common in financial literacy questions. Learn to find P, R,
+              or T when the others are given.
+            </p>
+          </div>
+          <div class="tool-card" style="cursor: default; pointer-events: none">
+            <div class="card-icon card-icon--green">📊</div>
+            <h3>Average / Mean</h3>
+            <p>
+              Find the mean of a set of numbers, or find a missing value when
+              the mean is already given. Average = Sum ÷ Count. Rearrange to
+              find what you need.
+            </p>
+          </div>
+          <div class="tool-card" style="cursor: default; pointer-events: none">
+            <div class="card-icon card-icon--orange">🔢</div>
+            <h3>Number Problems</h3>
+            <p>
+              Translate word clues like "double", "triple", "added to", and
+              "exceeds by" into algebraic expressions, form an equation, and
+              solve for the unknown number.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GUIDE -->
+    <section class="section">
+      <div class="container prose">
+        <h2>How to Approach Any Maths Word Problem</h2>
+        <p>
+          Word problems trip up students not because the maths is hard — but
+          because translating words into numbers feels unfamiliar. Here is a
+          system that works for every word problem you will ever see.
+        </p>
+
+        <h3>The RUDE Method</h3>
+        <p>
+          Good mathematics teachers teach a system called RUDE:
+          <strong>Read, Underline, Define, Execute</strong>. Here is what each
+          step means.
+        </p>
+
+        <h3>Read — Understand the Story First</h3>
+        <p>
+          Read the problem all the way through without writing anything down.
+          Your goal in this first pass is just to understand what is happening.
+          Is it about money? Ages? Distances? Get the big picture before you
+          focus on numbers.
+        </p>
+
+        <h3>Underline — Mark the Key Information</h3>
+        <p>
+          Go through the problem again and underline every number and every
+          keyword. Keywords like "total", "difference", "product", "older than",
+          "ratio", and "percent" each point to a specific mathematical
+          operation.
+        </p>
+
+        <h3>Define — Name Your Unknowns</h3>
+        <p>
+          Write "Let x = ..." before you start calculating. This single habit
+          eliminates most word-problem errors. Once you define x, express every
+          other unknown in terms of x. For two unknowns, express the second one
+          in terms of the first.
+        </p>
+
+        <h3>Execute — Form and Solve the Equation</h3>
+        <p>
+          Use your underlined information and your defined variable to write an
+          equation. Solve it step by step — do not rush. Show every line of
+          working, because examiners award marks for each correct step, not just
+          the final answer.
+        </p>
+
+        <div class="info-block note">
+          <span class="ib-icon">📌</span>
+          <p>
+            <strong>Common translation mistakes:</strong> "Less than" reverses
+            the order — "5 less than x" means x − 5, not 5 − x. "Exceeds by"
+            means the first number is bigger: "A exceeds B by 7" means A − B =
+            7, so A = B + 7. Watch these carefully.
+          </p>
+        </div>
+
+        <h2>The Most Common Keywords and What They Mean</h2>
+        <p>
+          Memorise this translation table and word problems become much less
+          intimidating:
+        </p>
+
+        <ul>
+          <li>
+            <strong>Sum, total, altogether, combined, in all</strong> → Addition
+            (+)
+          </li>
+          <li>
+            <strong>Difference, less, fewer, decreased by, reduced by</strong> →
+            Subtraction (−)
+          </li>
+          <li>
+            <strong
+              >Product, times, of, multiplied by, twice, double, triple</strong
+            >
+            → Multiplication (×)
+          </li>
+          <li>
+            <strong>Quotient, per, ratio of, divided by, shared equally</strong>
+            → Division (÷)
+          </li>
+          <li>
+            <strong>Is, was, equals, gives, results in, becomes</strong> →
+            Equals (=)
+          </li>
+          <li>
+            <strong>A number, some number, an unknown quantity</strong> →
+            Variable (x or n)
+          </li>
+        </ul>
+
+        <div class="info-block tip">
+          <span class="ib-icon">💡</span>
+          <p>
+            <strong>Practice habit:</strong> After solving a word problem,
+            always re-read every sentence in the original problem and check that
+            your answer satisfies <em>every</em> condition — not just the last
+            one. Students often solve for x correctly but answer the wrong
+            question.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- RELATED TOOLS -->
+    <section class="section section--gray">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Related Tools</span>
+          <h2>Keep Your Revision Going</h2>
+        </div>
+        <div class="related-tools">
+          <a href="physics.html" class="related-card">
+            <div class="rc-icon card-icon--blue">⚡</div>
+            <div>
+              <h4>Physics Numerical Solver</h4>
+              <p>Step-by-step solutions for 8 formula types</p>
+            </div>
+          </a>
+          <a href="chemistry.html" class="related-card">
+            <div class="rc-icon card-icon--green">⚗️</div>
+            <div>
+              <h4>Chemical Equation Balancer</h4>
+              <p>Balance equations with full explanations</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <div class="nav-logo" style="font-size: 1.1rem">
+              STEMBridge Tools
+            </div>
+            <p>
+              Free, step-by-step STEM tools for students in Class 6 through O
+              Level. Learn the method — not just the answer.
+            </p>
+          </div>
+          <div class="footer-col">
+            <h4>Tools</h4>
+            <ul>
+              <li><a href="physics.html">Physics Solver</a></li>
+              <li><a href="chemistry.html">Chemistry Balancer</a></li>
+              <li><a href="math.html">Maths Translator</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Company</h4>
+            <ul>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="blogs.html">Blogs</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Legal</h4>
+            <ul>
+              <li><a href="privacy.html">Privacy Policy</a></li>
+              <li><a href="disclaimer.html">Disclaimer</a></li>
+              <li>
+                <a href="terms-and-conditions.html">Terms and Conditions</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- ✅ FIX 6: Fixed broken footer HTML — unclosed <a> tag and stray > character removed -->
+        <div class="footer-bottom">
+          <span>© 2026 STEMBridge Tools. All rights reserved.</span>
+          <span>
+            <a href="privacy.html">Privacy Policy</a>
+            ·
+            <a href="disclaimer.html">Disclaimer</a>
+            ·
+            <a href="terms-and-conditions.html">Terms and Conditions</a>
+          </span>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../js/shared.js"></script>
+    <script src="../js/math.js"></script>
+  </body>
+</html>

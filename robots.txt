@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://stembridgetools.netlify.app/sitemap.xml

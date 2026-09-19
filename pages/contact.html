@@ -1,0 +1,408 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-S5CRK1K9G9"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-S5CRK1K9G9');
+  </script>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us — STEMBridge Tools</title>
+  <meta name="description" content="Get in touch with the STEMBridge Tools team. Have a question, suggestion, or want to report an issue? We'd love to hear from you." />
+  <meta name="robots" content="index, follow" />
+
+  <!-- ✅ FIXED canonical -->
+  <link rel="canonical" href="https://stembridgetools.netlify.app/pages/contact.html" />
+
+  <!-- ✅ ADDED Open Graph -->
+  <meta property="og:title" content="Contact Us — STEMBridge Tools" />
+  <meta property="og:description" content="Get in touch with the STEMBridge Tools team. Have a question, suggestion, or want to report an issue? We'd love to hear from you." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://stembridgetools.netlify.app/pages/contact.html" />
+  <meta property="og:image" content="https://stembridgetools.netlify.app/assets/stembridge-tools.png" />
+
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="icon" type="image/svg+xml" href="../assets/stembridge-tools.png" />
+</head>
+  <body>
+    <!-- HEADER -->
+    <header class="site-header">
+      <div class="container">
+        <nav class="nav">
+          <a href="../index.html" class="nav-logo"> STEMBridge Tools </a>
+          <ul class="nav-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="physics.html">Physics</a></li>
+            <li><a href="chemistry.html">Chemistry</a></li>
+            <li><a href="math.html">Maths</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="contact.html" class="active nav-cta">Contact</a></li>
+          </ul>
+          <button
+            class="nav-hamburger"
+            id="navHamburger"
+            aria-label="Open menu"
+          >
+            <span></span><span></span><span></span>
+          </button>
+        </nav>
+      </div>
+      <nav class="nav-mobile" id="navMobile">
+        <a href="../index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="physics.html">Physics Solver</a>
+        <a href="chemistry.html">Chemistry Balancer</a>
+        <a href="math.html">Maths Translator</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <!-- PAGE HERO -->
+    <section class="page-hero">
+      <div class="container">
+        <h1>Get in Touch</h1>
+        <p>
+          Have a question, a suggestion, or spotted a mistake? We read every
+          message and reply as quickly as we can.
+        </p>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="section">
+      <div class="container">
+        <div class="contact-grid">
+          <!-- LEFT: Info -->
+          <div class="contact-info">
+            <h3>We'd Love to Hear From You</h3>
+            <p>
+              Whether you want to suggest a new tool, report a bug, ask a
+              question about how the tools work, or just say hello — drop us a
+              message using the form.
+            </p>
+
+            <div class="ci-item">
+              <div class="ci-icon">📧</div>
+              <span>thestembridgechannel@gmail.com</span>
+            </div>
+            <div class="ci-item">
+              <div class="ci-icon">⏱️</div>
+              <span>We typically reply within 24–48 hours</span>
+            </div>
+            <div class="ci-item">
+              <div class="ci-icon">🌍</div>
+              <span>Open to students and teachers worldwide</span>
+            </div>
+
+            <div class="info-block tip" style="margin-top: 28px">
+              <span class="ib-icon">💡</span>
+              <p>
+                <strong>Suggesting a new topic?</strong> Tell us which formula,
+                reaction, or problem type you'd like us to add next. We
+                prioritise suggestions that come from students sitting real
+                exams.
+              </p>
+            </div>
+
+            <div class="info-block note" style="margin-top: 12px">
+              <span class="ib-icon">🏫</span>
+              <p>
+                <strong>Teachers &amp; tutors:</strong> If you'd like to use
+                STEMBridge Tools in your classroom or recommend it to students,
+                feel free to reach out. We are happy to help.
+              </p>
+            </div>
+          </div>
+
+          <!-- RIGHT: Form -->
+          <div>
+            <!-- Success message (hidden by default) -->
+            <div class="form-success" id="formSuccess">
+              ✅ Message sent! We'll get back to you within 24–48 hours.
+            </div>
+
+            <!-- Error message (hidden by default) -->
+            <div
+              class="form-success"
+              id="formError"
+              style="background: #fef2f2; border-color: #fecaca; color: #b91c1c"
+            >
+              ⚠️ Something went wrong. Please try again or email us directly at
+              thestembridgechannel@gmail.com.
+            </div>
+
+            <div class="tool-panel">
+              <div class="tool-panel-header">
+                <div class="panel-dot dot-blue"></div>
+                <h3>Send Us a Message</h3>
+              </div>
+              <div class="tool-panel-body">
+                <div class="form-row form-group">
+                  <div>
+                    <label for="contactName"
+                      >Your Name <span style="color: #ef4444">*</span></label
+                    >
+                    <input
+                      type="text"
+                      id="contactName"
+                      placeholder="e.g. Ali Hassan"
+                      required
+                    />
+                  </div>
+                  <div>
+                    <label for="contactEmail"
+                      >Your Email <span style="color: #ef4444">*</span></label
+                    >
+                    <input
+                      type="text"
+                      id="contactEmail"
+                      placeholder="e.g. ali@example.com"
+                      required
+                    />
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="contactSubject"
+                    >Subject <span style="color: #ef4444">*</span></label
+                  >
+                  <input
+                    type="text"
+                    id="contactSubject"
+                    placeholder="e.g. Suggestion for a new physics formula"
+                    required
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label for="contactMessage"
+                    >Message <span style="color: #ef4444">*</span></label
+                  >
+                  <textarea
+                    id="contactMessage"
+                    style="min-height: 160px"
+                    placeholder="Write your message here. The more detail you include, the better we can help you."
+                    required
+                  ></textarea>
+                </div>
+
+                <button class="btn-solve" id="contactSubmit" type="button">
+                  📨 Send Message
+                </button>
+
+                <p
+                  style="
+                    font-size: 0.8rem;
+                    color: var(--gray-400);
+                    margin-top: 12px;
+                    text-align: center;
+                  "
+                >
+                  By sending a message you agree to our
+                  <a
+                    href="privacy.html"
+                    style="color: var(--gray-500); text-decoration: underline"
+                    >Privacy Policy</a
+                  >.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ STRIP -->
+    <section class="section section--gray">
+      <div class="container prose">
+        <h2>Frequently Asked Questions</h2>
+
+        <h3>Are the tools really free?</h3>
+        <p>
+          Yes — completely free, with no account or sign-up required. You open
+          the page and start solving. We keep the tools free by displaying ads,
+          which helps cover our running costs.
+        </p>
+
+        <h3>Can I use STEMBridge Tools on my phone?</h3>
+        <p>
+          Absolutely. The entire website is mobile-first and works smoothly on
+          any screen size — phone, tablet, or desktop.
+        </p>
+
+        <h3>I found a mistake in a solution. What should I do?</h3>
+        <p>
+          Please let us know using the contact form above. Tell us which tool,
+          which equation or formula, and what you think the correct answer
+          should be. We take accuracy seriously and will fix errors quickly.
+        </p>
+
+        <h3>Can you add a specific formula or reaction?</h3>
+        <p>
+          Yes — and we welcome those requests. Use the contact form and tell us
+          exactly which topic you need. We prioritise additions based on what
+          students and teachers ask for most.
+        </p>
+
+        <h3>Is my data safe when I use this form?</h3>
+        <p>
+          We use EmailJS to send your message — your data goes directly to our
+          inbox and is not stored on any third-party server beyond what email
+          delivery requires. We never sell or share your contact details. Read
+          our <a href="privacy.html">Privacy Policy</a> for full details.
+        </p>
+      </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <div class="nav-logo" style="font-size: 1.1rem">
+              STEMBridge Tools
+            </div>
+            <p>
+              Free, step-by-step STEM tools for students in Class 6 through O
+              Level. Learn the method — not just the answer.
+            </p>
+          </div>
+          <div class="footer-col">
+            <h4>Tools</h4>
+            <ul>
+              <li><a href="physics.html">Physics Solver</a></li>
+              <li><a href="chemistry.html">Chemistry Balancer</a></li>
+              <li><a href="math.html">Maths Translator</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Company</h4>
+            <ul>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="blogs.html">Blogs</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Legal</h4>
+            <ul>
+              <li><a href="privacy.html">Privacy Policy</a></li>
+              <li><a href="disclaimer.html">Disclaimer</a></li>
+              <li>
+                <a href="terms-and-conditions.html"
+                  >Terms and Conditions</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span>© 2026 STEMBridge Tools. All rights reserved.</span>
+          <span
+            ><a href="privacy.html">Privacy Policy</a>
+            ·
+            <a href="disclaimer.html">Disclaimer</a>
+            ·
+            <a href="terms-and-conditions.html">Terms and Conditions</a>
+          >
+        </div>
+      </div>
+    </footer>
+
+    <!-- EmailJS SDK -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+    <script>
+      // ---- Initialise EmailJS ----
+      emailjs.init("8VrY1HAeSG2Sr9sn2");
+
+      document
+        .getElementById("contactSubmit")
+        .addEventListener("click", function () {
+          const name = document.getElementById("contactName").value.trim();
+          const email = document.getElementById("contactEmail").value.trim();
+          const subject = document
+            .getElementById("contactSubject")
+            .value.trim();
+          const message = document
+            .getElementById("contactMessage")
+            .value.trim();
+
+          const successBox = document.getElementById("formSuccess");
+          const errorBox = document.getElementById("formError");
+
+          // Hide previous messages
+          successBox.classList.remove("show");
+          errorBox.classList.remove("show");
+
+          // Basic validation
+          if (!name || !email || !subject || !message) {
+            errorBox.textContent =
+              "⚠️ Please fill in all required fields before sending.";
+            errorBox.classList.add("show");
+            errorBox.scrollIntoView({ behavior: "smooth", block: "center" });
+            return;
+          }
+
+          // Simple email format check
+          const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+          if (!emailRegex.test(email)) {
+            errorBox.textContent = "⚠️ Please enter a valid email address.";
+            errorBox.classList.add("show");
+            return;
+          }
+
+          // Loading state
+          const btn = document.getElementById("contactSubmit");
+          btn.innerHTML = '<span class="spinner"></span>Sending…';
+          btn.disabled = true;
+
+          // Send via EmailJS
+          emailjs
+            .send("service_z09j05j", "template_wvw22ko", {
+              from_name: name,
+              from_email: email,
+              subject: subject,
+              message: message,
+              to_email: "thestembridgechannel@gmail.com",
+              reply_to: email,
+            })
+            .then(function () {
+              successBox.classList.add("show");
+              successBox.scrollIntoView({
+                behavior: "smooth",
+                block: "center",
+              });
+
+              // Clear form
+              document.getElementById("contactName").value = "";
+              document.getElementById("contactEmail").value = "";
+              document.getElementById("contactSubject").value = "";
+              document.getElementById("contactMessage").value = "";
+
+              btn.innerHTML = "📨 Send Message";
+              btn.disabled = false;
+            })
+            .catch(function (error) {
+              console.error("EmailJS error:", error);
+              errorBox.textContent =
+                "⚠️ Something went wrong. Please try again or email us directly at thestembridgechannel@gmail.com.";
+              errorBox.classList.add("show");
+              errorBox.scrollIntoView({ behavior: "smooth", block: "center" });
+
+              btn.innerHTML = "📨 Send Message";
+              btn.disabled = false;
+            });
+        });
+    </script>
+
+    <script src="../js/shared.js"></script>
+  </body>
+</html>
